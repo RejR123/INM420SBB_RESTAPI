@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MATRIX BACKGROUND */
+#matrix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: black;
+}
+
+/* BODY */
+body {
+  font-family: "Courier New", monospace;
+  color: #00ff41;
+  background: black;
+  min-height: 100vh;
+}
+
+/* NAV */
+.nav {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #00ff41;
+}
+
+.nav__brand {
+  font-size: 28px;
+  text-shadow: 0 0 10px #00ff41;
+}
+
+.nav__tag {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* LAYOUT */
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 15px #00ff41;
+}
+
+.hero p {
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+/* SEARCH */
+.search {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search input {
+  width: 260px;
+  padding: 12px;
+  background: black;
+  border: 1px solid #00ff41;
+  color: #00ff41;
+}
+
+.search button {
+  padding: 12px 18px;
+  background: black;
+  border: 1px solid #00ff41;
+  color: #00ff41;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background: #00ff41;
+  color: black;
+}
+
+/* HISTORY */
+.history {
+  margin-top: 20px;
+}
+
+.history__title {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 8px;
+}
+
+#historyList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+#historyList li {
+  border: 1px solid #00ff41;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#historyList li:hover {
+  background: #00ff41;
+  color: black;
+}
+
+/* CARD */
+.card {
+  margin-top: 30px;
+  padding: 25px;
+  border: 1px solid #00ff41;
+  background: black;
+  box-shadow: 0 0 20px rgba(0,255,65,0.25);
+}
+
+.word {
+  font-size: 24px;
+}
+
+.label {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.text {
+  margin-top: 5px;
+  line-height: 1.6;
+}
+
+.status {
+  margin-bottom: 15px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.hidden {
+  display: none;
+}
+
+#clearBtn {
+  padding: 12px 18px;
+  background: black;
+  border: 1px solid #00ff41;
+  color: #00ff41;
+  cursor: pointer;
+}
+
+#clearBtn:hover {
+  background: #ff0033;
+  color: white;
+  border-color: #ff0033;
+}
+

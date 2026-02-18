@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>UrbanLookup</title>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <!-- MATRIX BACKGROUND -->
+      <canvas id="matrix"></canvas>
+      <!-- HEADER -->
+      <header class="nav">
+         <h1 class="nav__brand">UrbanLookup</h1>
+         <p class="nav__tag">REST API Project</p>
+      </header>
+      <!-- MAIN -->
+      <main class="container">
+         <!-- SEARCH -->
+         <section class="hero">
+            <h2>Look up slang in seconds</h2>
+            <p>Type a word or phrase to get its Urban Dictionary definition.</p>
+            <div class="search">
+               <input id="termInput" type="text" placeholder="Try: rizz, cap, npc...">
+               <button id="searchBtn">Search</button>
+               <button id="clearBtn">Clear</button>
+            </div>
+            <p class="tips">Press Enter to search</p>
+            <!-- SEARCH HISTORY -->
+            <div class="history">
+               <p class="history__title">Recent searches</p>
+               <ul id="historyList"></ul>
+            </div>
+         </section>
+         <!-- RESULT -->
+         <section class="card">
+            <p id="status" class="status">
+               Enter a term and hit search.
+            </p>
+            <div id="result" class="hidden">
+               <h2 id="wordTitle" class="word"></h2>
+               <p class="label">Definition</p>
+               <p id="definition" class="text"></p>
+               <p class="label">Example</p>
+               <p id="example" class="text"></p>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         © 2026 UrbanLookup
+      </footer>
+      <script src="main.js"></script>
+   </body>
+</html>
